@@ -1,0 +1,29 @@
+import React from "react";
+
+import {
+  Container,
+  Title,
+  Amount,
+  Footer,
+  Category,
+  Icon,
+  CategoryName,
+  Date,
+} from "./styles";
+
+export const TransactionCard: React.FC = () => {
+  return (
+    <Container>
+      <Title>Desenvolvimento de site</Title>
+      <Amount>R$ 12.00,00</Amount>
+
+      <Footer>
+        <Category>
+          <Icon name="dollar-sign" />
+          <CategoryName>Vendas</CategoryName>
+        </Category>
+        <Date>13/04/2021</Date>
+      </Footer>
+    </Container>
+  );
+};
