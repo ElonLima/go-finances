@@ -7,6 +7,7 @@ import {
 import { Feather } from "@expo/vector-icons";
 import { FlatList } from "react-native";
 import { DataListProps } from "./";
+import { BorderlessButton } from "react-native-gesture-handler";
 
 export const Container = styled.View`
   flex: 1;
@@ -66,6 +67,8 @@ export const Icon = styled(Feather)`
   font-size: ${RFValue(24)}px;
 `;
 
+export const LogoutButton = styled(BorderlessButton)``;
+
 export const HighlightCards = styled.ScrollView.attrs({
   horizontal: true,
   showsHorizontalScrollIndicator: false,
@@ -96,3 +99,9 @@ export const TransactionsList = styled(
     paddingBottom: getBottomSpace(),
   },
 })``;
+
+export const LoadContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
